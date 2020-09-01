@@ -1,4 +1,4 @@
-<?php include('server.php')?>
+<?php ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>login</title>
 </head>
+
+Hello
+
 <body>
     
 </body>
