@@ -1,8 +1,8 @@
-<?php ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
+	<title>Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -19,24 +19,23 @@
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/main2.css">
 <!--===============================================================================================-->
 </head>
 <body>
-	
+<div class="bgimg">
 	<div class="limiter">
 		<div class="container-login100" >
 			<div class="wrap-login100">
 				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/img-01.png" alt="IMG">
+					<img src="./images/Logo_MFU.png" alt="IMG" style="margin-left: 100px;">
 				</div>
-
 				<form class="login100-form validate-form">
 					<span class="login100-form-title">
-						Member Login
+					Login
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+					<div class="wrap-input100" >
 						<input class="input100" type="text" name="email" placeholder="Email">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
@@ -53,31 +52,27 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button class="login100-form-btn" id=loginbtn>
 							Login
+						</button>
+					</div>
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn2">
+							Login with Gmail
 						</button>
 					</div>
 
 					<div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-						<a class="txt2" href="#">
-							Username / Password?
-						</a>
+					<!-- space in login form -->
 					</div>
-
-					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
-							Create your Account
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-						</a>
+					<!-- space in login form -->
+					<div class="text-center p-t-100">
 					</div>
 				</form>
 			</div>
 		</div>
 	</div>
-	
+</div>
 	
 
 	
@@ -91,9 +86,11 @@
 <!--===============================================================================================-->
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
 	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
+	$(document).ready(function(){
+  		$("#loginbtn").click(function(){
+			alert("something")
 		})
+	});
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
